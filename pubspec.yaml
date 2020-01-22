@@ -1,7 +1,7 @@
 name: txt
 description: A simple Text widget to reduce the boilerplate.
 version: 0.0.1
-author: Thalles Santos
+author: Thalles Santos <thalles.rss@gmail.com>
 homepage: https://github.com/thallessantos/txt
 
 environment:
