@@ -1,0 +1,18 @@
+name: txt
+description: A simple Text widget to reduce the boilerplate.
+version: 0.0.1
+author: Thalles Santos
+homepage: https://github.com/thallessantos/txt
+
+environment:
+  sdk: ">=2.6.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
