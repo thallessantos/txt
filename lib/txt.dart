@@ -2,193 +2,254 @@ library txt;
 
 import 'package:flutter/material.dart';
 
-// ignore: must_be_immutable
 class Txt extends StatelessWidget {
   final String text;
 
-  Key key;
-  void setKey(Key key) => this.key = key;
+  final Key key;
+  Txt setKey(Key key) => copyWith(key: key);
 
-  Color color;
-  /// color = Colors.white
-  void white() => color = Colors.white;
-  void black() => color = Colors.black;
-  void red() => color = Colors.red;
-  void pink() => color = Colors.pink;
-  void purple() => color = Colors.purple;
-  void deepPurple() => color = Colors.deepPurple;
-  void indigo() => color = Colors.indigo;
-  void blue() => color = Colors.blue;
-  void lightBlue() => color = Colors.lightBlue;
-  void cyan() => color = Colors.cyan;
-  void teal() => color = Colors.teal;
-  void green() => color = Colors.green;
-  void lightGreen() => color = Colors.lightGreen;
-  void lime() => color = Colors.lime;
-  void yellow() => color = Colors.yellow;
-  void amber() => color = Colors.amber;
-  void orange() => color = Colors.orange;
-  void deepOrange() => color = Colors.deepOrange;
-  void brown() => color = Colors.brown;
-  void grey() => color = Colors.grey;
-  void blueGrey() => color = Colors.blueGrey;
-  void redAccent() => color = Colors.redAccent;
-  void pinkAccent() => color = Colors.pinkAccent;
-  void purpleAccent() => color = Colors.purpleAccent;
-  void deepPurpleAccent() => color = Colors.deepPurpleAccent;
-  void indigoAccent() => color = Colors.indigoAccent;
-  void blueAccent() => color = Colors.blueAccent;
-  void lightBlueAccent() => color = Colors.lightBlueAccent;
-  void cyanAccent() => color = Colors.cyanAccent;
-  void tealAccent() => color = Colors.tealAccent;
-  void greenAccent() => color = Colors.greenAccent;
-  void lightGreenAccent() => color = Colors.lightGreenAccent;
-  void limeAccent() => color = Colors.limeAccent;
-  void yellowAccent() => color = Colors.yellowAccent;
-  void amberAccent() => color = Colors.amberAccent;
-  void orangeAccent() => color = Colors.orangeAccent;
-  void deepOrangeAccent() => color = Colors.deepOrangeAccent;
-  void setColor(Color color) => this.color = color;
+  final Color color;
+  Txt white() => copyWith(color: Colors.white);
+  Txt black() => copyWith(color: Colors.black);
+  Txt red() => copyWith(color: Colors.red);
+  Txt pink() => copyWith(color: Colors.pink);
+  Txt purple() => copyWith(color: Colors.purple);
+  Txt deepPurple() => copyWith(color: Colors.deepPurple);
+  Txt indigo() => copyWith(color: Colors.indigo);
+  Txt blue() => copyWith(color: Colors.blue);
+  Txt lightBlue() => copyWith(color: Colors.lightBlue);
+  Txt cyan() => copyWith(color: Colors.cyan);
+  Txt teal() => copyWith(color: Colors.teal);
+  Txt green() => copyWith(color: Colors.green);
+  Txt lightGreen() => copyWith(color: Colors.lightGreen);
+  Txt lime() => copyWith(color: Colors.lime);
+  Txt yellow() => copyWith(color: Colors.yellow);
+  Txt amber() => copyWith(color: Colors.amber);
+  Txt orange() => copyWith(color: Colors.orange);
+  Txt deepOrange() => copyWith(color: Colors.deepOrange);
+  Txt brown() => copyWith(color: Colors.brown);
+  Txt grey() => copyWith(color: Colors.grey);
+  Txt blueGrey() => copyWith(color: Colors.blueGrey);
+  Txt redAccent() => copyWith(color: Colors.redAccent);
+  Txt pinkAccent() => copyWith(color: Colors.pinkAccent);
+  Txt purpleAccent() => copyWith(color: Colors.purpleAccent);
+  Txt deepPurpleAccent() => copyWith(color: Colors.deepPurpleAccent);
+  Txt indigoAccent() => copyWith(color: Colors.indigoAccent);
+  Txt blueAccent() => copyWith(color: Colors.blueAccent);
+  Txt lightBlueAccent() => copyWith(color: Colors.lightBlueAccent);
+  Txt cyanAccent() => copyWith(color: Colors.cyanAccent);
+  Txt tealAccent() => copyWith(color: Colors.tealAccent);
+  Txt greenAccent() => copyWith(color: Colors.greenAccent);
+  Txt lightGreenAccent() => copyWith(color: Colors.lightGreenAccent);
+  Txt limeAccent() => copyWith(color: Colors.limeAccent);
+  Txt yellowAccent() => copyWith(color: Colors.yellowAccent);
+  Txt amberAccent() => copyWith(color: Colors.amberAccent);
+  Txt orangeAccent() => copyWith(color: Colors.orangeAccent);
+  Txt deepOrangeAccent() => copyWith(color: Colors.deepOrangeAccent);
+  Txt setColor(Color color) => copyWith(color: color);
 
-  Color backgroundColor;
-  void bgWhite() => backgroundColor = Colors.white;
-  void bgBlack() => backgroundColor = Colors.black;
-  void bgRed() => backgroundColor = Colors.red;
-  void bgPink() => backgroundColor = Colors.pink;
-  void bgPurple() => backgroundColor = Colors.purple;
-  void bgDeepPurple() => backgroundColor = Colors.deepPurple;
-  void bgIndigo() => backgroundColor = Colors.indigo;
-  void bgBlue() => backgroundColor = Colors.blue;
-  void bgLightBlue() => backgroundColor = Colors.lightBlue;
-  void bgCyan() => backgroundColor = Colors.cyan;
-  void bgTeal() => backgroundColor = Colors.teal;
-  void bgGreen() => backgroundColor = Colors.green;
-  void bgLightGreen() => backgroundColor = Colors.lightGreen;
-  void bgLime() => backgroundColor = Colors.lime;
-  void bgYellow() => backgroundColor = Colors.yellow;
-  void bgAmber() => backgroundColor = Colors.amber;
-  void bgOrange() => backgroundColor = Colors.orange;
-  void bgDeepOrange() => backgroundColor = Colors.deepOrange;
-  void bgBrown() => backgroundColor = Colors.brown;
-  void bgGrey() => backgroundColor = Colors.grey;
-  void bgBlueGrey() => backgroundColor = Colors.blueGrey;
-  void bgRedAccent() => backgroundColor = Colors.redAccent;
-  void bgPinkAccent() => backgroundColor = Colors.pinkAccent;
-  void bgPurpleAccent() => backgroundColor = Colors.purpleAccent;
-  void bgDeepPurpleAccent() => backgroundColor = Colors.deepPurpleAccent;
-  void bgIndigoAccent() => backgroundColor = Colors.indigoAccent;
-  void bgBlueAccent() => backgroundColor = Colors.blueAccent;
-  void bgLightBlueAccent() => backgroundColor = Colors.lightBlueAccent;
-  void bgCyanAccent() => backgroundColor = Colors.cyanAccent;
-  void bgTealAccent() => backgroundColor = Colors.tealAccent;
-  void bgGreenAccent() => backgroundColor = Colors.greenAccent;
-  void bgLightGreenAccent() => backgroundColor = Colors.lightGreenAccent;
-  void bgLimeAccent() => backgroundColor = Colors.limeAccent;
-  void bgYellowAccent() => backgroundColor = Colors.yellowAccent;
-  void bgAmberAccent() => backgroundColor = Colors.amberAccent;
-  void bgOrangeAccent() => backgroundColor = Colors.orangeAccent;
-  void bgDeepOrangeAccent() => backgroundColor = Colors.deepOrangeAccent;
-  void setBackgroundColor(Color color) => this.backgroundColor = color;
+  final Color backgroundColor;
+  Txt bgWhite() => copyWith(backgroundColor: Colors.white);
+  Txt bgBlack() => copyWith(backgroundColor: Colors.black);
+  Txt bgRed() => copyWith(backgroundColor: Colors.red);
+  Txt bgPink() => copyWith(backgroundColor: Colors.pink);
+  Txt bgPurple() => copyWith(backgroundColor: Colors.purple);
+  Txt bgDeepPurple() => copyWith(backgroundColor: Colors.deepPurple);
+  Txt bgIndigo() => copyWith(backgroundColor: Colors.indigo);
+  Txt bgBlue() => copyWith(backgroundColor: Colors.blue);
+  Txt bgLightBlue() => copyWith(backgroundColor: Colors.lightBlue);
+  Txt bgCyan() => copyWith(backgroundColor: Colors.cyan);
+  Txt bgTeal() => copyWith(backgroundColor: Colors.teal);
+  Txt bgGreen() => copyWith(backgroundColor: Colors.green);
+  Txt bgLightGreen() => copyWith(backgroundColor: Colors.lightGreen);
+  Txt bgLime() => copyWith(backgroundColor: Colors.lime);
+  Txt bgYellow() => copyWith(backgroundColor: Colors.yellow);
+  Txt bgAmber() => copyWith(backgroundColor: Colors.amber);
+  Txt bgOrange() => copyWith(backgroundColor: Colors.orange);
+  Txt bgDeepOrange() => copyWith(backgroundColor: Colors.deepOrange);
+  Txt bgBrown() => copyWith(backgroundColor: Colors.brown);
+  Txt bgGrey() => copyWith(backgroundColor: Colors.grey);
+  Txt bgBlueGrey() => copyWith(backgroundColor: Colors.blueGrey);
+  Txt bgRedAccent() => copyWith(backgroundColor: Colors.redAccent);
+  Txt bgPinkAccent() => copyWith(backgroundColor: Colors.pinkAccent);
+  Txt bgPurpleAccent() => copyWith(backgroundColor: Colors.purpleAccent);
+  Txt bgDeepPurpleAccent() => copyWith(backgroundColor: Colors.deepPurpleAccent);
+  Txt bgIndigoAccent() => copyWith(backgroundColor: Colors.indigoAccent);
+  Txt bgBlueAccent() => copyWith(backgroundColor: Colors.blueAccent);
+  Txt bgLightBlueAccent() => copyWith(backgroundColor: Colors.lightBlueAccent);
+  Txt bgCyanAccent() => copyWith(backgroundColor: Colors.cyanAccent);
+  Txt bgTealAccent() => copyWith(backgroundColor: Colors.tealAccent);
+  Txt bgGreenAccent() => copyWith(backgroundColor: Colors.greenAccent);
+  Txt bgLightGreenAccent() => copyWith(backgroundColor: Colors.lightGreenAccent);
+  Txt bgLimeAccent() => copyWith(backgroundColor: Colors.limeAccent);
+  Txt bgYellowAccent() => copyWith(backgroundColor: Colors.yellowAccent);
+  Txt bgAmberAccent() => copyWith(backgroundColor: Colors.amberAccent);
+  Txt bgOrangeAccent() => copyWith(backgroundColor: Colors.orangeAccent);
+  Txt bgDeepOrangeAccent() => copyWith(backgroundColor: Colors.deepOrangeAccent);
+  Txt setBackgroundColor(Color color) => copyWith(backgroundColor: color);
 
-  num fontSize;
-  void setFontSize(size) => fontSize = size;
+  final num fontSize;
+  Txt setFontSize(size) => copyWith(fontSize: size);
 
-  FontWeight fontWeight;
-  void thin() => fontWeight = FontWeight.w100;
-  void extraLight() => fontWeight = FontWeight.w200;
-  void light() => fontWeight = FontWeight.w300;
-  void medium() => fontWeight = FontWeight.w500;
-  void semiBold() => fontWeight = FontWeight.w600;
-  void bold() => fontWeight = FontWeight.bold;
-  void extraBold() => fontWeight = FontWeight.w800;
-  void fwBlack() => fontWeight = FontWeight.w900;
+  final FontWeight fontWeight;
+  Txt thin() => copyWith(fontWeight: FontWeight.w100);
+  Txt extraLight() => copyWith(fontWeight: FontWeight.w200);
+  Txt light() => copyWith(fontWeight: FontWeight.w300);
+  Txt medium() => copyWith(fontWeight: FontWeight.w500);
+  Txt semiBold() => copyWith(fontWeight: FontWeight.w600);
+  Txt bold() => copyWith(fontWeight: FontWeight.bold);
+  Txt extraBold() => copyWith(fontWeight: FontWeight.w800);
+  Txt fwBlack() => copyWith(fontWeight: FontWeight.w900);
 
-  FontStyle fontStyle;
-  void italic() => fontStyle = FontStyle.italic;
-  void normal() => fontStyle = FontStyle.normal;
+  final FontStyle fontStyle;
+  Txt italic() => copyWith(fontStyle: FontStyle.italic);
+  Txt normal() => copyWith(fontStyle: FontStyle.normal);
 
-  double letterSpacing;
-  void setLetterSpacing(double letterSpacing) => this.letterSpacing = letterSpacing;
+  final double letterSpacing;
+  Txt setLetterSpacing(double letterSpacing) => copyWith(letterSpacing: letterSpacing);
 
-  double wordSpacing;
-  void setWordSpacing(double wordSpacing) => this.wordSpacing = wordSpacing;
+  final double wordSpacing;
+  Txt setWordSpacing(double wordSpacing) => copyWith(wordSpacing: wordSpacing);
 
-  TextBaseline textBaseline;
-  void alphabetic() => textBaseline = TextBaseline.alphabetic;
-  void ideographic() => textBaseline = TextBaseline.ideographic;
-  void setTextBaseline(TextBaseline textBaseline) => this.textBaseline = textBaseline;
+  final TextBaseline textBaseline;
+  Txt alphabetic() => copyWith(textBaseline: TextBaseline.alphabetic);
+  Txt ideographic() => copyWith(textBaseline: TextBaseline.ideographic);
+  Txt setTextBaseline(TextBaseline textBaseline) => copyWith(textBaseline: textBaseline);
 
-  double height;
-  void setHeight(double height) => this.height = height;
+  final double height;
+  Txt setHeight(double height) => copyWith(height: height);
 
-  Paint foreground;
-  void setForeground(Paint foreground) => this.foreground = foreground;
+  final Paint foreground;
+  Txt setForeground(Paint foreground) => copyWith(foreground: foreground);
 
-  Paint background;
-  void setBackground(Paint background) => this.background = background;
+  final Paint background;
+  Txt setBackground(Paint background) => copyWith(background: background);
 
-  TextDecoration decoration;
-  void underline() => decoration = TextDecoration.underline;
-  void lineThrough() => decoration = TextDecoration.lineThrough;
-  void overline() => decoration = TextDecoration.overline;
-  void setDecoration(TextDecoration decoration) => this.decoration = decoration;
+  final TextDecoration decoration;
+  Txt underline() => copyWith(decoration: TextDecoration.underline);
+  Txt lineThrough() => copyWith(decoration: TextDecoration.lineThrough);
+  Txt overline() => copyWith(decoration: TextDecoration.overline);
+  Txt setDecoration(TextDecoration decoration) => copyWith(decoration: decoration);
 
-  Color decorationColor;
-  void setDecorationColor(Color decorationColor) => this.decorationColor = decorationColor;
+  final Color decorationColor;
+  Txt setDecorationColor(Color decorationColor) => copyWith(decorationColor: decorationColor);
 
-  TextDecorationStyle decorationStyle;
-  void setTextDecorationStyle(TextDecorationStyle decorationStyle) => this.decorationStyle = decorationStyle;
+  final TextDecorationStyle decorationStyle;
+  Txt setTextDecorationStyle(TextDecorationStyle decorationStyle) => copyWith(decorationStyle: decorationStyle);
 
-  double decorationThickness;
-  void setDecorationThickness(double decorationThickness) => this.decorationThickness = decorationThickness;
+  final double decorationThickness;
+  Txt setDecorationThickness(double decorationThickness) => copyWith(decorationThickness: decorationThickness);
 
-  String debugLabel;
-  void setDebugLabel(String debugLabel) => this.debugLabel = debugLabel;
+  final String debugLabel;
+  Txt setDebugLabel(String debugLabel) => copyWith(debugLabel: debugLabel);
 
-  StrutStyle strutStyle;
-  void setStrutStyle(StrutStyle strutStyle) => this.strutStyle = strutStyle;
+  final StrutStyle strutStyle;
+  Txt setStrutStyle(StrutStyle strutStyle) => copyWith(strutStyle: strutStyle);
 
-  TextAlign textAlign;
-  void left() => textAlign = TextAlign.left;
-  void right() => textAlign = TextAlign.right;
-  void center() => textAlign = TextAlign.center;
-  void justify() => textAlign = TextAlign.justify;
-  void start() => textAlign = TextAlign.start;
-  void end() => textAlign = TextAlign.end;
-  void setTextAlign(TextAlign textAlign) => this.textAlign = textAlign;
+  final TextAlign textAlign;
+  Txt left() => copyWith(textAlign: TextAlign.left);
+  Txt right() => copyWith(textAlign: TextAlign.right);
+  Txt center() => copyWith(textAlign: TextAlign.center);
+  Txt justify() => copyWith(textAlign: TextAlign.justify);
+  Txt start() => copyWith(textAlign: TextAlign.start);
+  Txt end() => copyWith(textAlign: TextAlign.end);
+  Txt setTextAlign(TextAlign textAlign) => copyWith(textAlign: textAlign);
 
-  TextDirection textDirection;
-  void setTextDirection(TextDirection textDirection) => this.textDirection = textDirection;
+  final TextDirection textDirection;
+  Txt setTextDirection(TextDirection textDirection) => copyWith(textDirection: textDirection);
 
-  Locale locale;
-  void setLocale(Locale locale) => this.locale = locale;
+  final Locale locale;
+  Txt setLocale(Locale locale) => copyWith(locale: locale);
 
-  bool softWrap;
-  void setSoftWrap(bool softWrap) => this.softWrap = softWrap;
+  final bool softWrap;
+  Txt setSoftWrap(bool softWrap) => copyWith(softWrap: softWrap);
 
-  TextOverflow overflow;
-  void visible() => this.overflow = TextOverflow.visible;
-  void clip() => this.overflow = TextOverflow.clip;
-  void fade() => this.overflow = TextOverflow.fade;
-  void ellipsis() => this.overflow = TextOverflow.ellipsis;
-  void setOverflow(TextOverflow overflow) => this.overflow = overflow;
+  final TextOverflow overflow;
+  Txt visible() => copyWith(overflow: TextOverflow.visible);
+  Txt clip() => copyWith(overflow: TextOverflow.clip);
+  Txt fade() => copyWith(overflow: TextOverflow.fade);
+  Txt ellipsis() => copyWith(overflow: TextOverflow.ellipsis);
+  Txt setOverflow(TextOverflow overflow) => copyWith(overflow: overflow);
 
-  double textScaleFactor;
-  void setTextScaleFactor(double textScaleFactor) => this.textScaleFactor = textScaleFactor;
+  final double textScaleFactor;
+  Txt setTextScaleFactor(double textScaleFactor) => copyWith(textScaleFactor: textScaleFactor);
 
-  int maxLines;
-  void setMaxLines(int maxLines) => this.maxLines = maxLines;
+  final int maxLines;
+  Txt setMaxLines(int maxLines) => copyWith(maxLines: maxLines);
 
-  String semanticsLabel;
-  void setSemanticsLabel(String semanticsLabel) => this.semanticsLabel = semanticsLabel;
+  final String semanticsLabel;
+  Txt setSemanticsLabel(String semanticsLabel) => copyWith(semanticsLabel: semanticsLabel);
 
-  TextWidthBasis textWidthBasis;
-  void longestLine() => this.textWidthBasis = TextWidthBasis.longestLine;
-  void parent() => this.textWidthBasis = TextWidthBasis.parent;
-  void setTextWidthBasis(TextWidthBasis textWidthBasis) => this.textWidthBasis = textWidthBasis;
+  final TextWidthBasis textWidthBasis;
+  Txt longestLine() => copyWith(textWidthBasis: TextWidthBasis.longestLine);
+  Txt parent() => copyWith(textWidthBasis: TextWidthBasis.parent);
+  Txt setTextWidthBasis(TextWidthBasis textWidthBasis) => copyWith(textWidthBasis: textWidthBasis);
 
-  String fontFamily;
-  void setFontFamily(String fontFamily) => this.fontFamily = fontFamily;
+  final String fontFamily;
+  Txt setFontFamily(String fontFamily) => copyWith(fontFamily: fontFamily);
+
+  Txt copyWith({
+    Key key,
+    Color color,
+    Color backgroundColor,
+    double fontSize,
+    FontWeight fontWeight,
+    FontStyle fontStyle,
+    double letterSpacing,
+    double wordSpacing,
+    TextBaseline textBaseline,
+    double height,
+    Paint foreground,
+    Paint background,
+    TextDecoration decoration,
+    Color decorationColor,
+    TextDecorationStyle decorationStyle,
+    double decorationThickness,
+    String debugLabel,
+    StrutStyle strutStyle,
+    TextAlign textAlign,
+    TextDirection textDirection = TextDirection.ltr,
+    Locale locale,
+    bool softWrap,
+    TextOverflow overflow,
+    double textScaleFactor,
+    int maxLines,
+    String semanticsLabel,
+    TextWidthBasis textWidthBasis,
+    String fontFamily
+  }) {
+    return Txt(
+      this.text,
+        key: key ?? this.key,
+        color: color ?? this.color,
+        backgroundColor: backgroundColor ?? this.backgroundColor,
+        fontSize: fontSize ?? this.fontSize,
+        fontWeight: fontWeight ?? this.fontWeight,
+        fontStyle: fontStyle ?? this.fontStyle,
+        letterSpacing: letterSpacing ?? this.letterSpacing,
+        wordSpacing: wordSpacing ?? this.wordSpacing,
+        textBaseline: textBaseline ?? this.textBaseline,
+        height: height ?? this.height,
+        foreground: foreground ?? this.foreground,
+        background: background ?? this.background,
+        decoration: decoration ?? this.decoration,
+        decorationColor: decorationColor ?? this.decorationColor,
+        decorationStyle: decorationStyle ?? this.decorationStyle,
+        decorationThickness: decorationThickness ?? this.decorationThickness,
+        debugLabel: debugLabel ?? this.debugLabel,
+        strutStyle: strutStyle ?? this.strutStyle,
+        textAlign: textAlign ?? this.textAlign,
+        textDirection: textDirection ?? this.textDirection,
+        locale: locale ?? this.locale,
+        softWrap: softWrap ?? this.softWrap,
+        overflow: overflow ?? this.overflow,
+        textScaleFactor: textScaleFactor ?? this.textScaleFactor,
+        maxLines: maxLines ?? this.maxLines,
+        semanticsLabel: semanticsLabel ?? this.semanticsLabel,
+        textWidthBasis: textWidthBasis ?? this.textWidthBasis,
+        fontFamily: fontFamily ?? this.fontFamily
+    );
+  }
 
   Txt(this.text, {
     this.key,
@@ -218,6 +279,7 @@ class Txt extends StatelessWidget {
     this.maxLines,
     this.semanticsLabel,
     this.textWidthBasis,
+    this.fontFamily
   }) : assert(text != null),
         super(key : key);
 
